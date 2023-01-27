@@ -19,9 +19,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body{
     background-color: rgb(44, 44, 44);
     color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main{
+    background-color: rgb(62, 80, 80);
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    
 }
