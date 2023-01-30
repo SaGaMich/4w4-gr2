@@ -10,11 +10,10 @@
     <h1><u>Bienvenue au cours de 4w4</u></h1>
     <?php
         if(have_posts()):
-            while (have_posts()) : the_post();
-                echo '<h1>' . get_the_title() . '</h1>';
-
-                //the_content(); 
-    ?>
+            while (have_posts()) : the_post(); ?>
+                <h1>
+                    <a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?> </a>
+                </h1>
                 <hr>
     <?php
             endwhile;

@@ -322,7 +322,7 @@ template {
 
 /* --------------------------------------------- base */
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
 
 h2 {
