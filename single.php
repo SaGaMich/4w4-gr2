@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-    <h3>index.php</h3>
+    <h3>single.php</h3>
     <h1><u>Bienvenue au cours de 4w4</u></h1>
     <?php
         if(have_posts()):
