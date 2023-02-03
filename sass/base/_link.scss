@@ -1,9 +1,11 @@
 a{
-    color: rgb(109, 116, 145);
+    color: rgb(32, 15, 0);
+
     &:visited{
-        color: rgb(105, 86, 102);
+        color: rgb(59, 34, 34);
     }
+    
     &:hover{
-        color: rgb(12, 107, 94);
+        color: rgb(30, 75, 87);
     }
 }

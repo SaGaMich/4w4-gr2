@@ -41,3 +41,18 @@ h1 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
+
+body{
+  background-color: rgb(200, 200, 218);
+}
+
+  header{
+    height: 15vh;
+    width: 100%;
+    margin: 0 0;
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
