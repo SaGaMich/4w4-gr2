@@ -369,20 +369,19 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-body {
+/*body{
   background-color: rgb(200, 200, 218);
-}
+}*/
+/* header{
+   height: 15vh;
+   width: 100%;
+   margin: 0 0;
+   background-color: rgb(231, 229, 229);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
 
-header {
-  height: 15vh;
-  width: 100%;
-  margin: 0 0;
-  background-color: rgb(231, 229, 229);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
+ }*/
 a {
   color: rgb(32, 15, 0);
 }
@@ -394,6 +393,18 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(95, 97, 97);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+}
+
 .site_footer {
   display: flex;
   justify-content: space-between;
