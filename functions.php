@@ -13,7 +13,7 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
 /*------------------enregistrement des menus---------------*/ 
 
-if ( ! function_exists( 'enregistrement_nav_manu' ) ) {
+
 
 	function enregistrement_nav_manu(){
 		register_nav_menus( array(
@@ -22,6 +22,14 @@ if ( ! function_exists( 'enregistrement_nav_manu' ) ) {
 		) );
 	}
 	add_action( 'after_setup_theme', 'enregistrement_nav_manu', 0 );
-}
+
+/* ------------------------------------- ???*/
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', 
+					array(
+						'height' => 150,
+						'width'  => 150,
+) );
+add_theme_support( 'post-thumbnails' );
 
 ?>

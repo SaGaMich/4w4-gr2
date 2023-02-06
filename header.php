@@ -7,11 +7,14 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
-        <?php wp_nav_menu(array(
+    <header class="site_header">
+        <section class="site_header_logo">
+            <?php the_custom_logo() ?>
+            <?php wp_nav_menu(array(
                 "menu"=> "entete",
                 "container" => "nav"
             )) ?>
+        </section>
         <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
         <h2><?= bloginfo('description') ?></h2>
         

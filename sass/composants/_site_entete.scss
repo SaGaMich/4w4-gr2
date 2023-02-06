@@ -1,15 +1,27 @@
+.site_header{
+    
+}
+
+.site_header_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .menu-entete-container{ //nav
     
     .menu{ //ul
         display: flex;
         list-style-type: none;
-        justify-content: space-around;
+        justify-content: flex-end;
 
         .menu-item{ //li
             color: rgb(95, 97, 97);
 
             a{
                 display: block;
+                padding: 5px 20px;
             }
 
         }
