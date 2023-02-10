@@ -1,4 +1,4 @@
-# Laboratoire 1
+# exercice 1
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Michelle Salois Gadoury
 #### Description

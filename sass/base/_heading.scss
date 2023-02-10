@@ -1,3 +1,8 @@
+/*
+css font-size clamp generator
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiIxODAwcHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D
+*/
+
 h1 {
     font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   }
@@ -41,18 +46,3 @@ h1 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
-
-/*body{
-  background-color: rgb(200, 200, 218);
-}*/
-
- /* header{
-    height: 15vh;
-    width: 100%;
-    margin: 0 0;
-    background-color: rgb(231, 229, 229);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-  }*/

@@ -8,14 +8,14 @@
 </head>
 <body>
     <header class="site_header">
+
         <section class="site_header_logo">
-            <?php the_custom_logo() ?>
+            <?php the_custom_logo(); ?>
             <?php wp_nav_menu(array(
                 "menu"=> "entete",
                 "container" => "nav"
             )) ?>
         </section>
-        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
+        <h1><?= bloginfo('name') ?>   <?= bloginfo('description') ?></h1>    
         
     </header>

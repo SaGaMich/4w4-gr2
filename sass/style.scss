@@ -13,13 +13,11 @@ Text Domain: 2023-4w4-msg
 
 @import "variables/dimension";
 @import "normalize/normalize";
-//@import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
 @import "base/heading";
-//@import "base/espacement";
 @import "base/link";
-//@import "base/list";
+@import "base/body";
 
 /* --------------------------------------------- composant */
 @import "composants/site_entete";
