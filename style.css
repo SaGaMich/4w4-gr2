@@ -401,6 +401,9 @@ body {
   padding: 10px 0;
   margin: 0 0;
   background-color: rgb(59, 56, 66);
+}
+.site_header h1 a {
+  text-decoration: none;
   color: white;
 }
 
@@ -427,9 +430,7 @@ body {
 
 .site_footer {
   background-color: rgb(59, 56, 66);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  margin-top: 50px;
 }
 .site_footer section {
   display: flex;
