@@ -391,6 +391,13 @@ body {
 .site_header {
   background-color: rgb(255, 255, 255);
 }
+.site_header h1 {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 0;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
 
 .site_header_logo {
   display: flex;
@@ -410,6 +417,7 @@ body {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+  text-decoration: none;
 }
 
 .site_footer {
