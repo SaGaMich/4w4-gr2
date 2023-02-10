@@ -27,22 +27,23 @@ h1 {
   }
   
   h1 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(85, 78, 78);
   }
   
-  h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    /* font-family: "Slackey", cursive; */
-  }
-  
+  h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   
-  p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+  p{
+    font-family: "Poppins", sans-serif;
+  }
+
+  a,
+  main{
+    font-family: "Montserrat", sans-serif;
   }
