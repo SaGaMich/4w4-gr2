@@ -1,12 +1,19 @@
 .site_footer{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: rgb(61, 61, 61);
-    height: 10vh;
+    background-color: rgb(59, 56, 66);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     section{
-        flex: 1 1 200px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 15vh;
+
+    }
+
+    p{
         color: white;
     }
 }
