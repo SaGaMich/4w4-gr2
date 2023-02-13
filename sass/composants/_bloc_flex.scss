@@ -1,0 +1,26 @@
+.blocflex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article{
+        flex: 1 1 300px;
+        margin: 10px 10px;
+        background-color: rgb(192, 192, 192);
+        
+        a{
+            text-decoration: none;
+        }
+
+        h2{
+            text-align: center;
+            background-color: white;
+            margin: 0 0;
+            padding: 5px 0;
+        }
+        
+        p{
+            padding: 5px;
+        }
+    }
+}

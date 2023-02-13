@@ -15,13 +15,16 @@ Text Domain: 2023-4w4-msg
 
 @import "variables/dimension";
 @import "normalize/normalize";
+@import "variables/root";
 
 /* --------------------------------------------- base */
 @import "base/heading";
 @import "base/link";
 @import "base/body";
+@import "base/markdown";
 
 /* --------------------------------------------- composant */
 @import "composants/site_entete";
 @import "composants/pied_page";
+@import "composants/bloc_flex";
 
