@@ -1,26 +1,45 @@
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
 
 /* Liste */
-ul,ol{}
+ul,ol{
+    font-size: clamp(0.5rem, 0.125rem + 1.6vw, 1.1rem);
+    font-family: "Montserrat", sans-serif;
+}
 
 ul > li,
 ol > li{
 
 }
 
-ul>li {}
+ul{
+    
+}
 
-ol>li{}
+ul>li {
+}
 
+ol>li{
+    
+}
+
+li::marker {
+    color: rgb(157, 153, 158);
+    font-size: 2rem;
+  }
+  
 /* ----------------------------  pre */
 
 pre {}
 
-code {}
+code {
+    background-color: rgb(204, 204, 204);
+}
 
 i{}
 
-blockquote {}
+blockquote {
+    
+}
 
 hr {}
 

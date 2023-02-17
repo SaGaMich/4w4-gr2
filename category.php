@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-    <h3>catégory.php</h3>
+<h6><?php echo category_description(); ?></h6>
     <section class="blocflex">
         <?php
             if(have_posts()):
@@ -14,9 +14,7 @@
         ?>
         <article>
         <a href="<?php echo get_permalink();?>">
-            <h2><?php echo get_the_title(); ?></h2>
-            <?php //the_content(); // affiche le contenu complet de l'article?>
-            <?php //the_excerpt(); // affiche une résumé de l'article ?> 
+            <h3><?php echo get_the_title(); ?></h3>
             <p><?= wp_trim_words(get_the_excerpt(), 10, "...") ?></p>
         </a>
         </article>
