@@ -5,20 +5,22 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="résultat-recherche">
 <h3>search.php</h3>
-<h3>Résultats de la recherche</h3>
+<h2>Résultats de la recherche</h2>
 <?php
     if (have_posts()): 
-        while (have_posts()) : the_post();
-            the_title('<h4>','</h4>');?>
+        while (have_posts()) : the_post();?>  
             
-     
-            <?= wp_trim_words(get_the_excerpt(), 50, " [...] "); ?>
-            <hr>
+    <div>    
+    <a href="<?php the_permalink(); ?>">
+    <h2> <?= get_the_title(); ?></h2>
+        <?= wp_trim_words(get_the_excerpt(), 50, "..."); ?>
+    </a>
+    </div>
     <?php endwhile;
-    endif;
-?>
+        endif;
+    ?>
 </main>
 
 <?php get_footer(); ?>
