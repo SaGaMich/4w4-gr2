@@ -4,7 +4,8 @@
 *
 */
 ?>
-<main class="site__main">
+<?php get_header(); ?>
+<main class="site_main">
     <code>category.php</code>
    <section class="blocflex">
       <?php

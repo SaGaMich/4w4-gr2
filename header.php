@@ -9,13 +9,14 @@
 <body>
     <header class="site_header">
     <h1><a href="<?= bloginfo('url') ?>"> <?= bloginfo('name') ?> <?= bloginfo('description') ?> </a></h1>  
-
         <section class="site_header_logo">
-            <?php the_custom_logo(); ?>
-            <?php wp_nav_menu(array(
-                "menu"=> "entete",
-                "container" => "nav"
-            )) ?>
-        </section>
-        
+            <div class="logomenu">
+                <?php the_custom_logo(); ?>
+                <?php wp_nav_menu(array(
+                    "menu"=> "entete",
+                    "container" => "nav"
+                )) ?>
+            </div>
+            <?php  get_search_form(); ?>
+        </section>       
     </header>
