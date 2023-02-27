@@ -18,8 +18,13 @@ Mise en page
   }
 
   .site_aside {
+    display: none;
     grid-area: aside;
-    background-color: rgb(72, 85, 66);
+    //background-color: rgb(72, 85, 66);
+
+    @media screen and (min-width: 1000px) {
+      display: block;
+    }
   }
 
 .site {
@@ -30,7 +35,7 @@ Mise en page
       "aside"
       "main"
       "footer";
-    row-gap: 50px;
+    row-gap: 10px;
 
     @media screen and (min-width: 1000px) {
       grid-template-columns: 20% auto;

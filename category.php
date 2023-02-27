@@ -22,7 +22,7 @@
                <?php
                   $titre = get_the_title();
                   if( $category->slug == 'cours-tim'){
-                     $titre = substr($titre,7,65);
+                     $titre = substr($titre,7,-6);
                   }
                ?>
                <h3><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h3>
