@@ -3,24 +3,20 @@ Mise en page
 */
 .site_header {
     grid-area: header;
-    //padding: 1rem clamp(1rem, 3vw, 20rem);
-    //background-color: antiquewhite;
   }
   
   .site_main {
     grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    overflow: hidden;
   }
   
   .site_footer {
     grid-area: footer;
-    //background-color: antiquewhite;
   }
 
   .site_aside {
     display: none;
     grid-area: aside;
-    //background-color: rgb(72, 85, 66);
 
     @media screen and (min-width: 1000px) {
       display: block;

@@ -465,8 +465,13 @@ code {
 /*------------------------------menu entête*/
 .logomenu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  /* @media screen and (min-width: 1000px) {
+
+       justify-content: space-between;
+
+     }*/
 }
 .logomenu .menu-entete-container .menu {
   display: flex;
@@ -581,7 +586,7 @@ Mise en page
 
 .site_main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
 }
 
 .site_footer {

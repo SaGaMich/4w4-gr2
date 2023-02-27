@@ -23,14 +23,13 @@
     .recherche{
         margin: 0 10px;
     }
-
 }
 
 
 /*------------------------------menu entête*/
 .logomenu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     .menu-entete-container{ //nav
@@ -52,4 +51,10 @@
             }
         }
     }
+
+   /* @media screen and (min-width: 1000px) {
+
+        justify-content: space-between;
+
+      }*/
 }

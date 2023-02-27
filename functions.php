@@ -13,8 +13,6 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
 /*------------------enregistrement des menus---------------*/ 
 
-
-
 	function enregistrement_nav_manu(){
 		register_nav_menus( array(
 	    	'principal' => 'Menu Principal',
@@ -49,5 +47,5 @@ function cidweb_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
-
+	 
 ?>
