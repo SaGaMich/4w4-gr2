@@ -43,7 +43,7 @@ function cidweb_modifie_requete_principal( $query ) {
     if (    $query->is_home()
             && $query->is_main_query()
             && ! is_admin() ) {
-      $query->set( 'category_name', 'note-cours-4w4' );
+      $query->set( 'category_name', 'accueil' );
       $query->set( 'orderby', 'title' );
       $query->set( 'order', 'ASC' );
       }
