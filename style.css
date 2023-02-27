@@ -484,7 +484,6 @@ code {
 
 .site_footer {
   background-color: rgb(59, 56, 66);
-  margin-top: 50px;
 }
 .site_footer section {
   display: flex;
@@ -501,7 +500,6 @@ code {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem;
 }
 .blocflex article {
   padding: 0;
@@ -540,4 +538,41 @@ code {
 .résultat-recherche div h2 {
   margin: 0 0;
   padding: 5px 5px;
+}
+
+/*c-------------------------------------------- layout */
+/*
+Mise en page
+*/
+.site_header {
+  grid-area: header;
+}
+
+.site_main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site_footer {
+  grid-area: footer;
+}
+
+.site_aside {
+  grid-area: aside;
+  background-color: rgb(72, 85, 66);
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+  row-gap: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" ". main" "footer footer";
+    row-gap: 20px;
+    column-gap: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
