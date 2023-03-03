@@ -5,7 +5,8 @@
     flex-direction: row;
     justify-content: space-around;*/
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) , 1fr); //a re faire probleme!!!!
+
    
     // Cette déclaration sera meilleur quand min() sera mieux supporté
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
@@ -43,6 +44,7 @@
     }
 
     .blocflex_galerie{
+        grid-column: 1 / 3;
         // flex: 1 0 100%;
     }
   }
