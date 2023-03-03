@@ -502,30 +502,37 @@ code {
 }
 
 .blocflex {
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;*/
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
-.blocflex article {
-  padding: 0;
+.blocflex .blocflex_article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0;
+  padding: 0 0;
   background-color: rgb(192, 192, 192);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
 }
-.blocflex article a {
+.blocflex .blocflex_article a {
   text-decoration: none;
 }
-.blocflex article h3 {
-  text-align: center;
-  background-color: white;
+.blocflex .blocflex_article h2 {
+  /*//text-align: center;
+  //background-color: white;
   margin: 0 0;
   padding: 5px 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;*/
 }
-.blocflex article p {
+.blocflex .blocflex_article p {
   padding: 5px;
 }
-
 .site_main h6 {
   text-align: center;
 }

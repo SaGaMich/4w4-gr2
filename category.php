@@ -18,16 +18,9 @@
       $query = new WP_Query( $args );
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
-            <article>
-               <?php
-                  $titre = get_the_title();
-                  if( $category->slug == 'cours-tim'){
-                     $titre = substr($titre,7,-6);
-                  }
-               ?>
-               <h3><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h3>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-            </article>
+         <?php
+         /*$category->slug peut avoir une de ces deux valeur : "cours" ou "note-4w4"*/
+         get_template_part('template-parts/categorie', $category->slug);?>
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>

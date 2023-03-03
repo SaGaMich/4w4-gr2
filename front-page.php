@@ -10,19 +10,17 @@
     <section class="blocflex">
         <?php
             if(have_posts()):
-                while (have_posts()) : the_post(); 
-        ?>
-        <article>
-        <h3><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h3>
-            <?php //the_content(); // affiche le contenu complet de l'article?>
-            <?php //the_excerpt(); // affiche une résumé de l'article ?> 
-            <p><?= wp_trim_words(get_the_excerpt(), 10, "...") ?></p>
-        </a>
-        </article>
-        <?php 
+                while (have_posts()) : the_post();
+
+                $la_categorie = 'accueil';
+                if(in_category('galerie')){
+                $la_categorie = 'galerie';}
+                get_template_part('template-parts/categorie', $la_categorie);
+
             endwhile;
             endif;
         ?>
     </section>
+
 </main>
 <?php get_footer(); ?>
