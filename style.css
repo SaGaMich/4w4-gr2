@@ -502,19 +502,22 @@ code {
 }
 
 .blocflex {
-  /*display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;*/
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr), 1fr);
-  gap: 2rem;
-}
-.blocflex .blocflex_article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0;
+  width: 90vw;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) , 1fr); //a re faire probleme!!!!*/
+}
+.blocflex .blocflex_article {
+  display: flex;
+  flex: 1 0 350px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 10px 10px;
   padding: 0 0;
   background-color: rgb(192, 192, 192);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -534,11 +537,7 @@ code {
   padding: 5px;
 }
 .blocflex .blocflex_galerie {
-  grid-column: 1/3;
-}
-
-.site_main h6 {
-  text-align: center;
+  flex: 1 0 100%;
 }
 
 .résultat-recherche div {
@@ -595,23 +594,23 @@ Mise en page
   grid-area: header;
 }
 
+.accueil_main {
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .site_main {
   grid-area: main;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .site_footer {
   grid-area: footer;
-}
-
-.site_aside {
-  display: none;
-  grid-area: aside;
-}
-@media screen and (min-width: 1000px) {
-  .site_aside {
-    display: block;
-  }
 }
 
 .site {
@@ -629,13 +628,9 @@ Mise en page
   }
 }
 
-.no-aside {
-  /*@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
+  .no-aside {
     grid-template-columns: auto;
-    grid-template-areas:
-    "header"
-    "aside"
-    "main"
-    "footer";
-  }*/
+    grid-template-areas: "header" "aside" "main" "footer";
+  }
 }/*# sourceMappingURL=style.css.map */

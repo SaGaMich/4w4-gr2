@@ -1,4 +1,4 @@
-<aside class="site_aside <?php echo (is_front_page()?'no-aside':'')?>">
+<aside class="site_aside">
         <h3>Menu secondaire</h3>
         <div class="menu_aside">
         <?php

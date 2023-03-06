@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 <body class="site">
-    <header class="site_header">
+    <header class="site_header <?php echo (is_front_page()?'no-aside':'')?>">
     <h1><a href="<?= bloginfo('url') ?>"> <?= bloginfo('name') ?> <?= bloginfo('description') ?> </a></h1>  
         <section class="site_header_logo">
             <div class="logomenu">
@@ -22,4 +22,6 @@
             </div>
         </section>       
     </header>
-    <?php get_template_part('template-parts/aside'); ?>
+    <?php 
+    if (! is_front_page()){
+    get_template_part('template-parts/aside');} ?>

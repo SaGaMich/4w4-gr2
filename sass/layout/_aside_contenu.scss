@@ -5,9 +5,20 @@ Mise en page
     grid-area: header;
   }
   
+  .accueil_main{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .site_main {
     grid-area: main;
     overflow: hidden;
+    //width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .site_footer {
@@ -15,12 +26,7 @@ Mise en page
   }
 
   .site_aside {
-    display: none;
-    grid-area: aside;
-
-    @media screen and (min-width: 1000px) {
-      display: block;
-    }
+ 
   }
 
 .site {
@@ -46,13 +52,12 @@ Mise en page
   }
 
   .no-aside{
-    /*@media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1000px) {
       grid-template-columns: auto;
       grid-template-areas:
       "header"
       "aside"
       "main"
       "footer";
-    }*/
-    //display: none;
+    }
   }

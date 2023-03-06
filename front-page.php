@@ -5,7 +5,7 @@
 */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="accueil_main">
     <h1>Bienvenue au cours de 4w4</h1>
     <section class="blocflex">
         <?php
