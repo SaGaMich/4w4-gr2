@@ -21,7 +21,18 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 	}
 	add_action( 'after_setup_theme', 'enregistrement_nav_manu', 0 );
 
-/* ------------------------------------- ???*/
+/*---------------------Modification des choix de menu "cours"-----*/
+function personalisation_menu_item_title($title, $item, $args, $depth) {
+    // Remplacer 'cours' par l'identifiant de votre menu
+    if($args->menu == 'cours') {
+// Modifier la longueur du titre en fonction de vos besoins
+$title = wp_trim_words($title, 3, ' ... '); // on garde uniquement trois mots pourle titre du choix
+}
+return $title;
+}
+add_filter('nav_menu_item_title', 'personalisation_menu_item_title', 10, 4);
+
+/* ------------------------------------- ?*/
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo', 
 					array(

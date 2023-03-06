@@ -627,4 +627,15 @@ Mise en page
     row-gap: 20px;
     column-gap: 30px;
   }
+}
+
+.no-aside {
+  /*@media screen and (min-width: 1000px) {
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  }*/
 }/*# sourceMappingURL=style.css.map */

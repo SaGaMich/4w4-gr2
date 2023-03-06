@@ -22,12 +22,4 @@
             </div>
         </section>       
     </header>
-    <aside class="site_aside">
-        <h3>menu test aside</h3>
-        <div class="menu_aside">
-        <?php wp_nav_menu(array(
-            "menu" => "aside",
-            "container" => "nav"
-        )); ?>
-        </div>
-    </aside>
+    <?php get_template_part('template-parts/aside'); ?>
