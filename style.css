@@ -525,13 +525,15 @@ code {
 
 .site_footer {
   background-color: rgb(59, 56, 66);
-}
-.site_footer section {
   display: flex;
   justify-content: space-around;
   align-content: center;
+  flex-wrap: nowrap;
+}
+.site_footer .réseaux {
+  display: flex;
   flex-wrap: wrap;
-  height: 15vh;
+  flex-direction: column;
 }
 .site_footer p {
   color: white;
