@@ -1,3 +1,4 @@
+/*------------------------------------ entête de la page------------*/
 .site_header{
     background-color: rgb(255, 255, 255);
 
@@ -6,7 +7,6 @@
         padding: 10px 0;
         margin: 0 0;
         background-color: rgb(59, 56, 66);
-             
 
         a{
             text-decoration: none;
@@ -19,25 +19,82 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .recherche{
-        margin: 0 10px;
-    }
 }
 
+/*------------------------------recherche*/
 
-/*------------------------------menu entête*/
-.logomenu{
+.menu_recherche{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction:column-reverse;
+    //height: 150px;
+    margin: 10px 0;
+
+
+    @media screen and (min-width: $largeur__tablette) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .recherche{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 5px 0;
+    }
+            .recherche__input{
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(192, 192, 192);
+                padding: 0 10px;
+                margin: 0 10px;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            }
+
+            .recherche__bouton, .burger{
+                width: 40px;
+                border-radius: 10px;
+                height: 40px;
+                border: none;
+                background-color: rgb(192, 192, 192);
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            }
+    
+
+    /*------------------------------menu entête*/
+    #checkMenu:checked ~ .menu-entete-container{
+        transform: translateX(0);
+    }
+    
 
     .menu-entete-container{ //nav
+        transform: translateX(300px);
+        transition: transform 0.5s;
+        background-color: rgb(192, 192, 192);
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        margin: 10px 0;
+        @media screen and (min-width: $largeur__tablette) {
+            transform: translateX(0);
+            background-color: white;
+            border-radius: none;
+            box-shadow:none;
+        }
         
         .menu{ //ul
             display: flex;
             list-style-type: none;
-            justify-content: flex-end;
+            justify-content: center;
+            flex-direction:column;
+            align-items: flex-end;
+            
+            @media screen and (min-width: $largeur__tablette) {
+                flex-direction:row;
+                align-items: center;
+            }
 
             .menu-item{ //li
                 color: rgb(95, 97, 97);
@@ -46,15 +103,10 @@
                     display: block;
                     padding: 5px 20px;
                     text-decoration: none;
+                    white-space: nowrap;
                 }
 
             }
         }
     }
-
-   /* @media screen and (min-width: 1000px) {
-
-        justify-content: space-between;
-
-      }*/
 }

@@ -3,6 +3,7 @@ Mise en page
 */
 .site_header {
     grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
   }
   
   .accueil_main{
@@ -51,11 +52,14 @@ Mise en page
   }
 
   .no-aside{
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
     @media screen and (min-width: 1000px) {
       grid-template-columns: auto;
       grid-template-areas:
       "header"
-      "aside"
       "main"
       "footer";
     }

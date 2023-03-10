@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-<body class="site">
-    <header class="site_header <?php echo (is_front_page()?'no-aside':'')?>">
+<?php
+    $nouvelle_classe = "";
+    if (! is_front_page()){
+        $nouvelle_classe = 'no-aside';
+    }
+?>
+<body class="site <?php $nouvelle_classe ?>">
+    <header class="site_header">
     <h1><a href="<?= bloginfo('url') ?>"> <?= bloginfo('name') ?> <?= bloginfo('description') ?> </a></h1>  
         <section class="site_header_logo">
-            <div class="logomenu">
-                <?php the_custom_logo(); ?>
+        <?php the_custom_logo(); ?>
+            <div class="menu_recherche">
+                <input type="checkbox" id="checkMenu">
                 <?php wp_nav_menu(array(
                     "menu"=> "entete",
                     "container" => "nav"
                 )) ?>
+                <label class="burger" for="checkMenu">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+                </label>
+                <?php  get_search_form(); ?>
+                
             </div>
-            <div class="recherche">
-            <?php  get_search_form(); ?>
-            </div>
-        </section>       
+        </section>
     </header>
     <?php 
     if (! is_front_page()){
