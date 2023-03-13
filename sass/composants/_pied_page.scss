@@ -15,10 +15,48 @@
        
     }
 
-    .réseaux{
+    .menu_footer{
+        //text-align: center;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        
+        ul{
+            list-style-type: none;
+            
+            li{
+                margin: 10px 0;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+
+                &:visited{
+                    color: rgb(161, 161, 161);
+                }
+                
+                &:hover{
+                    color: rgb(153, 54, 54);
+                }
+            }
+        }
+        }
+
+      
+    }
+
+    .reseaux{
+        text-align: center;
+
+        .logo_reseaux{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+           img{
+            padding: 2px 2px;
+           }
+        }
     }
 
     p{

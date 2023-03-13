@@ -530,10 +530,39 @@ code {
   align-content: center;
   flex-wrap: nowrap;
 }
-.site_footer .réseaux {
+.site_footer .menu_footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.site_footer .menu_footer ul {
+  list-style-type: none;
+}
+.site_footer .menu_footer ul li {
+  margin: 10px 0;
+}
+.site_footer .menu_footer ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.site_footer .menu_footer ul li a:visited {
+  color: rgb(161, 161, 161);
+}
+.site_footer .menu_footer ul li a:hover {
+  color: rgb(153, 54, 54);
+}
+.site_footer .reseaux {
+  text-align: center;
+}
+.site_footer .reseaux .logo_reseaux {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+}
+.site_footer .reseaux .logo_reseaux img {
+  padding: 2px 2px;
 }
 .site_footer p {
   color: white;
@@ -621,13 +650,32 @@ code {
   }
 }
 .site_aside .menu_aside nav ul .menu-item {
-  margin: 10px 10px;
-  padding: 10px 10px;
-  background-color: rgb(236, 236, 236);
+  margin: 5px 5px;
+  padding: 2px 2px;
+  background-color: rgba(236, 236, 236, 0);
   border-radius: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .site_aside .menu_aside nav ul .menu-item {
+    display: block;
+    margin: 5px 10px;
+    padding: 10px 10px;
+    background-color: rgb(236, 236, 236);
+  }
 }
 .site_aside .menu_aside a {
   text-decoration: none;
+}
+.site_aside .menu_aside a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .site_aside .menu_aside a p {
+    display: block;
+  }
+}
+.site_aside .menu_aside a code {
+  background-color: rgb(236, 236, 236);
 }
 
 /*----------------------------------bouton burger------*/
