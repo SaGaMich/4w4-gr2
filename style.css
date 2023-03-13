@@ -473,6 +473,11 @@ code {
   margin: 0 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+@media screen and (min-width: 1000px) {
+  .menu_recherche .recherche__input {
+    width: 300px;
+  }
+}
 .menu_recherche .recherche__bouton, .menu_recherche .burger {
   width: 40px;
   border-radius: 10px;
@@ -561,7 +566,7 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.site_footer .reseaux .logo_reseaux img {
+.site_footer .reseaux .logo_reseaux svg {
   padding: 2px 2px;
 }
 .site_footer p {

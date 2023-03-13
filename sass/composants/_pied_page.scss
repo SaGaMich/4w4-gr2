@@ -1,12 +1,10 @@
 .site_footer{
     background-color: rgb(59, 56, 66);
-    //margin-top: 50px;
     display: flex;
-        justify-content: space-around;
-        align-content: center;
-        flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
    
-
     section{
     
     }
@@ -52,7 +50,8 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-           img{
+            
+           svg{
             padding: 2px 2px;
            }
         }
