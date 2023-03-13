@@ -9,8 +9,10 @@
     //strpos($titre, '('); //permet de trouver la position du caractère, ')'
 ?>
 <article class="blocflex_article">
-    <h2><a href="<?php the_permalink(); ?>"> <?= $sigle ?></a></h2>
+<a href="<?php the_permalink(); ?>">
+    <h2> <?= $sigle ?></h2>
     <h5><?= $titre_long ?></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
     <h5><?= $duree ?></h5>
+    </a>
 </article>

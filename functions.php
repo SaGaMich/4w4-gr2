@@ -42,10 +42,11 @@ add_filter('nav_menu_item_title', 'personalisation_menu_item_title', 10, 4);
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo', 
 					array(
-						'height' => 150,
-						'width'  => 150,
+						'height' => 100,
+						'width'  => 100,
 ) );
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-background' );
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

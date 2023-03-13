@@ -573,8 +573,6 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   width: 90vw;
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) , 1fr); //a re faire probleme!!!!*/
 }
 .blocflex .blocflex_article {
   display: flex;
@@ -593,18 +591,22 @@ code {
 .blocflex .blocflex_article a {
   text-decoration: none;
 }
-.blocflex .blocflex_article h2 {
-  /*//text-align: center;
-  //background-color: white;
-  margin: 0 0;
-  padding: 5px 0;
-  border-radius: 10px 10px 0 0;*/
+.blocflex .blocflex_article h2, .blocflex .blocflex_article h5, .blocflex .blocflex_article p {
+  padding: 0 0;
+  margin: 5px 5px;
 }
-.blocflex .blocflex_article p {
-  padding: 5px;
+.blocflex .blocflex_galerie figure {
+  flex: 1 0 30%;
 }
-.blocflex .blocflex_galerie {
-  flex: 1 0 100%;
+@media screen and (min-width: 800px) {
+  .blocflex .blocflex_galerie figure {
+    flex: 1 0 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .blocflex .blocflex_galerie figure {
+    flex: 1 0 5%;
+  }
 }
 
 .résultat-recherche div {

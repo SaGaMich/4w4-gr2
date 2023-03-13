@@ -8,6 +8,8 @@
     }
 ?>
 <article class="blocflex_article">
-    <h3><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h3>
+<a href="<?php the_permalink(); ?>">
+    <h3><?= $titre ?></h3>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+    </a>
 </article>
