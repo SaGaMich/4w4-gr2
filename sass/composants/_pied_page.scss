@@ -26,22 +26,20 @@
             
             li{
                 margin: 10px 0;
-            a{
-                text-decoration: none;
-                color: rgb(255, 255, 255);
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
 
-                &:visited{
-                    color: rgb(161, 161, 161);
-                }
-                
-                &:hover{
-                    color: rgb(153, 54, 54);
+                    &:visited{
+                        color: rgb(161, 161, 161);
+                    }
+                    
+                    &:hover{
+                        color: rgb(153, 54, 54);
+                    }
                 }
             }
         }
-        }
-
-      
     }
 
     .reseaux{

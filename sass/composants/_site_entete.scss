@@ -30,7 +30,6 @@
     flex-direction:column-reverse;
     margin: 10px 0;
 
-
     @media screen and (min-width: $largeur__tablette) {
         flex-direction: row;
         align-items: center;
@@ -72,7 +71,6 @@
         transform: translateX(0);
     }
     
-
     .menu-entete-container{ //nav
         transform: translateX(300px);
         transition: transform 0.5s;

@@ -1,3 +1,9 @@
+<?php
+/*
+* Modèle footer par défaut
+*
+*/
+?>
 <footer class="site_footer">
     <section>
             <div class="logo_footer">

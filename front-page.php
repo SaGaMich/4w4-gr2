@@ -1,6 +1,6 @@
 <?php
 /*
-* Modèle par défaut
+* Modèle front-page par défaut
 *
 */
 ?>

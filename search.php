@@ -1,6 +1,6 @@
 <?php
 /**
- * Modèle par défaut
+ * Modèle search par défaut
  * 
  */
 ?>
