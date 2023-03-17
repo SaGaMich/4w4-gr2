@@ -357,7 +357,7 @@ P {
 
 h1 {
   font-family: "Ubuntu", sans-serif;
-  color: rgb(85, 78, 78);
+  color: rgb(224, 224, 224);
 }
 
 h2,
@@ -388,19 +388,19 @@ button:active {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: rgb(44, 43, 43);
 }
 a:visited {
-  color: rgb(51, 34, 59);
+  color: rgb(110, 64, 78);
 }
 a:hover {
-  color: rgb(153, 54, 54);
+  color: rgb(221, 25, 84);
 }
 
 body {
-  background-color: rgb(222, 217, 226);
-  margin: 10px 10px;
+  background-color: rgb(37, 37, 41);
   overflow-x: hidden;
+  color: rgb(224, 224, 224);
 }
 
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
@@ -415,25 +415,27 @@ li::marker {
   font-size: 2rem;
 }
 
-/* ----------------------------  pre */
+/* ----------------------------  code */
 code {
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 5px 5px;
 }
 
 /* --------------------------------------------- composant */
 /*------------------------------------ entête de la page------------*/
 .site_header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(151, 152, 158);
 }
 .site_header h1 {
   text-align: center;
   padding: 10px 0;
   margin: 0 0;
-  background-color: rgb(59, 56, 66);
+  background-color: rgb(37, 37, 41);
 }
 .site_header h1 a {
   text-decoration: none;
-  color: white;
+  color: rgb(221, 25, 84);
 }
 
 .site_header_logo {
@@ -468,7 +470,7 @@ code {
   height: 40px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(238, 238, 238);
   padding: 0 10px;
   margin: 0 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -483,7 +485,7 @@ code {
   border-radius: 10px;
   height: 40px;
   border: none;
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(238, 238, 238);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .menu_recherche #checkMenu:checked ~ .menu-entete-container {
@@ -492,15 +494,15 @@ code {
 .menu_recherche .menu-entete-container {
   transform: translateX(300px);
   transition: transform 0.5s;
-  background-color: rgb(192, 192, 192);
   border-radius: 10px;
+  background-color: rgb(238, 238, 238);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   margin: 10px 0;
 }
 @media screen and (min-width: 800px) {
   .menu_recherche .menu-entete-container {
     transform: translateX(0);
-    background-color: white;
+    background-color: rgb(151, 152, 158);
     border-radius: none;
     box-shadow: none;
   }
@@ -519,7 +521,7 @@ code {
   }
 }
 .menu_recherche .menu-entete-container .menu .menu-item {
-  color: rgb(95, 97, 97);
+  color: rgb(0, 0, 0);
 }
 .menu_recherche .menu-entete-container .menu .menu-item a {
   display: block;
@@ -529,11 +531,16 @@ code {
 }
 
 .site_footer {
-  background-color: rgb(59, 56, 66);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: nowrap;
+}
+.site_footer .logo_footer a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .site_footer .menu_footer {
   display: flex;
@@ -590,7 +597,7 @@ code {
   margin: 10px 10px;
   padding: 0 0;
   background-color: rgb(192, 192, 192);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
   border-radius: 10px;
 }
 .blocflex .blocflex_article a {
@@ -615,7 +622,6 @@ code {
 }
 
 .résultat-recherche div {
-  background-color: rgb(255, 255, 255);
   margin: 20px 0;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
@@ -630,7 +636,7 @@ code {
 }
 
 .site_aside {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(153, 153, 153);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
 }
@@ -638,7 +644,7 @@ code {
   text-align: center;
   padding: 10px 0;
   margin: 0 0;
-  background-color: rgb(59, 56, 66);
+  background-color: rgb(221, 25, 84);
   border-radius: 10px 10px 0 0;
   color: white;
 }
@@ -659,7 +665,6 @@ code {
 .site_aside .menu_aside nav ul .menu-item {
   margin: 5px 5px;
   padding: 2px 2px;
-  background-color: rgba(236, 236, 236, 0);
   border-radius: 10px;
 }
 @media screen and (min-width: 1000px) {
@@ -667,7 +672,7 @@ code {
     display: block;
     margin: 5px 10px;
     padding: 10px 10px;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(192, 192, 192);
   }
 }
 .site_aside .menu_aside a {
@@ -682,7 +687,7 @@ code {
   }
 }
 .site_aside .menu_aside a code {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(192, 192, 192);
 }
 
 /*----------------------------------bouton burger------*/

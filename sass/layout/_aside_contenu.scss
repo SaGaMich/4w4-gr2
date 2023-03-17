@@ -39,7 +39,7 @@ Mise en page
       "footer";
     row-gap: 10px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:
       "header header"
@@ -56,7 +56,7 @@ Mise en page
       "header"
       "main"
       "footer";
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: auto;
       grid-template-areas:
       "header"

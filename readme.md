@@ -2,9 +2,17 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Michelle Salois Gadoury
 #### Description
-- Améliorer la classe .blocflex
-- Création du modèle category.php
-- Améliorer l'affichage des articles « markdown »
+- catégorie
+- flex et grid
+- barre de recherche
+- Aside
+- media query
+- template-part
+- galerie d'image
+- menu burger
+
+### Site ground
+- https://cidweb20.sg-host.com/
 
 ### Référence
 - https://eddytuto.ca/
@@ -15,12 +23,3 @@
 - https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiIxODAwcHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D
 - https://web.dev/css-marker-pseudo-element/
 - https://getcssscan.com/css-box-shadow-examples
-
-
-
-liste à faire:
--couleur
--logo
--siteground
--image
--ici
