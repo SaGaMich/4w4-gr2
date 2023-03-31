@@ -26,7 +26,7 @@
                 <label class="burger" for="checkMenu">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
                 </label>
-                <?php  get_search_form(); ?>
+                <?php get_search_form(); ?>
                 
             </div>
         </section>
