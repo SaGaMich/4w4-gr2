@@ -1,15 +1,14 @@
-# TP1
+# Examen intra
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Michelle Salois Gadoury
 #### Description
-- catégorie
-- flex et grid
-- barre de recherche
-- Aside
-- media query
+- développement de la page search.php
+- aside
 - template-part
-- galerie d'image
-- menu burger
+- catégory
+- média query
+- adaptation 
+
 
 ### Site ground
 - https://cidweb20.sg-host.com/
