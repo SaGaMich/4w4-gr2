@@ -17,12 +17,7 @@
             get_template_part('template-parts/search', $category);?>  
             
             
-    <div>    
-    <a href="<?php the_permalink(); ?>">
-    <h2> <?= get_the_title(); ?></h2>
-        <?= wp_trim_words(get_the_excerpt(), 50, "..."); ?>
-    </a>
-    </div>
+  
     <hr>
     <?php endwhile;
         endif;
