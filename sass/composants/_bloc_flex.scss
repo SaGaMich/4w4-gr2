@@ -1,0 +1,42 @@
+.blocflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+  
+    .blocflex_article {
+        display: flex;
+        flex: 1 0 350px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 0 0;
+        background-color: rgb(192, 192, 192);
+        box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
+        border-radius: 10px;
+
+        a{
+            text-decoration: none;
+        }
+        
+        h2, h5, p{
+            padding: 0 0;
+            margin: 5px 5px;
+        }
+    }
+
+    .blocflex_galerie{
+        figure{
+        flex: 1 0 30%;
+        @media screen and (min-width: $largeur__tablette) {
+            flex: 1 0 15%;
+        }
+        @media screen and (min-width: $largeur__bureau) {
+            flex: 1 0 5%;
+        }
+        }
+    }
+  }

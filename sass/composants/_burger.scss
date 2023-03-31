@@ -1,0 +1,20 @@
+/*----------------------------------bouton burger------*/
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0);
+    transition: transform .5s; 
+
+    @media screen and (min-width: $largeur__tablette) {
+        display: none;
+    }
+}
+
+#checkMenu:checked ~ .burger{
+    transform: rotate(90deg);
+}
+
+#checkMenu{
+    display: none;
+}

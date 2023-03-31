@@ -1,0 +1,113 @@
+/*------------------------------------ entête de la page------------*/
+.site_header{
+    background-color: rgb(151, 152, 158);
+
+    h1{
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 0;
+        background-color: rgb(37, 37, 41);
+
+        a{
+            text-decoration: none;
+            color: rgb(221, 25, 84);
+        }
+    }
+}
+
+.site_header_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*------------------------------recherche*/
+
+.menu_recherche{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction:column-reverse;
+    margin: 10px 0;
+
+    @media screen and (min-width: $largeur__tablette) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .recherche{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 5px 0;
+    }
+            .recherche__input{
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(238, 238, 238);
+                padding: 0 10px;
+                margin: 0 10px;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+                @media screen and (min-width: $largeur__bureau) {
+                    width: 300px;
+                }
+            }
+
+            .recherche__bouton, .burger{
+                width: 40px;
+                border-radius: 10px;
+                height: 40px;
+                border: none;
+                background-color: rgb(238, 238, 238);
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            }
+    
+
+    /*------------------------------menu entête*/
+    #checkMenu:checked ~ .menu-entete-container{
+        transform: translateX(0);
+    }
+    
+    .menu-entete-container{ //nav
+        transform: translateX(300px);
+        transition: transform 0.5s;
+        border-radius: 10px;
+        background-color: rgb(238, 238, 238);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        margin: 10px 0;
+        @media screen and (min-width: $largeur__tablette) {
+            transform: translateX(0);
+            background-color: rgb(151, 152, 158);
+            border-radius: none;
+            box-shadow:none;
+        }
+        
+        .menu{ //ul
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            flex-direction:column;
+            align-items: flex-end;
+            
+            @media screen and (min-width: $largeur__tablette) {
+                flex-direction:row;
+                align-items: center;
+            }
+
+            .menu-item{ //li
+                color: rgb(0, 0, 0);
+
+                a{
+                    display: block;
+                    padding: 5px 20px;
+                    text-decoration: none;
+                    white-space: nowrap;
+                }
+
+            }
+        }
+    }
+}
