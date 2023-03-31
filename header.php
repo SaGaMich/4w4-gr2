@@ -8,7 +8,7 @@
 </head>
 <?php
     $nouvelle_classe = "";
-    if (! is_front_page()){
+    if (! is_front_page() /*|| get_search();*/){
         $nouvelle_classe = 'no-aside';
     }
 ?>

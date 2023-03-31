@@ -4,20 +4,16 @@
  * 
  */
 ?>
-<?php get_header(); ?>
-
+<?php get_header();?>
 <main class="résultat-recherche">
 <h2>Résultats de la recherche</h2>
 
 <?php
-
     if (have_posts()): 
         while (have_posts()) : the_post();
-          $category = 'cours';
-            get_template_part('template-parts/search', $category);?>  
-            
-            
-  
+        $category = 'cours';
+        get_template_part('template-parts/search', $category);
+?>  
     <hr>
     <?php endwhile;
         endif;
