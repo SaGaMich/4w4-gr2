@@ -5,7 +5,7 @@
 */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="site_main">
     <?php
         if(have_posts()):
             while (have_posts()) : the_post();
@@ -14,7 +14,7 @@
     ?>
                 <hr>
     <?php
-            endwhile;
+        endwhile;
         endif;
     ?>
 </main>
