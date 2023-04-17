@@ -34,6 +34,9 @@ $sigle = substr($title,0,7);
 $title = substr($title,7);
 $title = "<code>" . $sigle . "</code>" . "<p>" .wp_trim_words($title, 3, ' ... ') . "</p>"; // on garde uniquement trois mots pourle titre du choix
 }
+if($args->menu == '4w4'){//ici??
+    if (substr($title,0,1) == "0"){$title = substr($title,1);}
+}
 return $title;
 }
 add_filter('nav_menu_item_title', 'personalisation_menu_item_title', 10, 4);
