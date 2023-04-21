@@ -5,21 +5,18 @@
     align-content: center;
     flex-wrap: nowrap;
 
-    .logo_footer{
-        a{
-            display: flex;
-        justify-content: center;
-        align-content: center;
-        }
-        
-    }
-
     .menu_footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+
+        .widget{
+
+        h2{
+            text-align: center;
+        }
         
         ul{
             list-style-type: none;
@@ -41,19 +38,6 @@
             }
         }
     }
-
-    .reseaux{
-        text-align: center;
-
-        .logo_reseaux{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            
-           svg{
-            padding: 2px 2px;
-           }
-        }
     }
 
     p{
