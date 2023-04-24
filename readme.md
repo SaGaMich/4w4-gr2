@@ -1,13 +1,8 @@
-# Examen intra
+# Lab 5
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Michelle Salois Gadoury
 #### Description
-- développement de la page search.php
-- aside
-- template-part
-- catégory
-- média query
-- adaptation 
+- 
 
 
 ### Site ground
