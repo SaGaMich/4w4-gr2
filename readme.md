@@ -2,7 +2,12 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Michelle Salois Gadoury
 #### Description
-- 
+- widget
+- footer
+- logos
+- menu
+
+### problème avec lab5, donc les derniers push sont dans lab4
 
 
 ### Site ground
