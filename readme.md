@@ -7,7 +7,7 @@
 - logos
 - menu
 
-### problème avec lab5, donc les derniers push sont dans lab4
+### problème avec lab5, donc les derniers push sont dans lab5.2
 
 
 ### Site ground
