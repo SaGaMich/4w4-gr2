@@ -9,6 +9,15 @@
     <h1>Bienvenue au cours de 4w4</h1>
     <section class="blocflex">
         <?php
+        wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav"
+        ));
+        ?>
+    </section>
+    
+    <section class="blocflex">
+        <?php
             if(have_posts()):
                 while (have_posts()) : the_post();
 

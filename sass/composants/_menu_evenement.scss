@@ -1,0 +1,12 @@
+.menu-evenement-container{ // nav
+    .menu {//ul
+        display: flex;
+        .menu-item { //li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border : 1px solid #aaa;
+            height : 50px;
+        }
+    }
+}
