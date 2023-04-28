@@ -1,13 +1,8 @@
-# Lab 5
+# TP2
 ## 4w4 - Conception d'interface et développement Web
-### Auteur: Michelle Salois Gadoury
+### Auteur : Michelle Salois Gadoury
 #### Description
-- widget
-- footer
-- logos
-- menu
-
-### problème avec lab5, donc les derniers push sont dans lab5.2
+- 
 
 
 ### Site ground

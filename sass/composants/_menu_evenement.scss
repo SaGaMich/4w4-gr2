@@ -6,7 +6,11 @@
             flex-direction: column;
             justify-content: space-between;
             border : 1px solid #aaa;
-            height : 50px;
+            height : 100px;
+            margin: 10px;
+            a{
+                font-size: 2rem;
+            }
         }
     }
 }
