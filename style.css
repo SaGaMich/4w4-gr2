@@ -730,28 +730,37 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid #aaa;
-  margin: 10px;
+  margin: 20px;
 }
 .menu-evenement-container .menu .menu-item a {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  text-align: center;
-  font-size: 2rem;
+  justify-content: center;
 }
 .menu-evenement-container .menu .menu-item a .title {
   display: block;
-  font-size: 1rem;
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  width: 200px;
 }
 .menu-evenement-container .menu .menu-item a .description {
   font-size: 1rem;
-}
-.menu-evenement-container .menu .menu-item a span {
   display: block;
-  font-size: 0.9rem;
-} /*c-------------------------------------------- layout */
+  position: absolute;
+  text-align: center;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+  position: relative;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 50%;
+  width: 300px;
+  height: 200px;
+}
+
+/*c-------------------------------------------- layout */
 /*
 Mise en page
 */
