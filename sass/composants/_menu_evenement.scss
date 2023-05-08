@@ -6,10 +6,29 @@
             flex-direction: column;
             justify-content: space-between;
             border : 3px solid #aaa;
-            height : 100px;
+            //height : 100px;
             margin : 10px;
             a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
                 font-size: 2rem;
+
+                .title {
+                    display: block;
+                    font-size: 1rem;
+                }
+
+                .description{
+                    font-size: 1rem;
+                }
+
+                .menu-thumbnail{
+
+                }
+
                 span {
                     display : block;
                     font-size: .9rem;

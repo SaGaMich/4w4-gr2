@@ -42,26 +42,21 @@ return $title;
 add_filter('nav_menu_item_title', 'personalisation_menu_item_title', 10, 4);
 
 /**
- * Pour ajouter la description des événements dans le menu événement
+ * Pour ajouter la description et une image des événements dans le menu événement
  */
-function ajouter_description_class_menu( $items, $args ) {
-    // Vérifier si le menu correspondant est celui que vous souhaitez modifier
-    if ( 'evenement' === $args->menu ) {
-        foreach ( $items as $item ) {
-           // var_dump($item);
-            // Récupérer le titre, la description et la classe personnalisée
-            $titre = $item->title;
-            $description = $item->description;
-            //$classe = $item->classes; // Remplacer par le nom de la classe souhaitée
-
-            // Ajouter la description et la classe personnalisée à l'élément de menu
-            $item->title .= '<span>' . $description . '</span>';
+function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
+    if ( 'evenement' == $args->menu) {
+        $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
+        if ( $post_thumbnail_id ) {
+            $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
+            $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><img src="' . esc_url( $post_thumbnail_url[0] ) . '" class="menu-thumbnail" />', $item_output );
+        } else {
+            $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span>', $item_output );
         }
     }
-    return $items;
+    return $item_output;
 }
-add_filter( 'wp_nav_menu_objects', 'ajouter_description_class_menu', 10, 2 );
-
+add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10, 4 );
 
 /* ------------------------------------- add_theme_support()*/
 add_theme_support( 'title-tag' );

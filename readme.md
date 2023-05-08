@@ -2,7 +2,14 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur : Michelle Salois Gadoury
 #### Description
-- 
+- caroussel (améliorer)
+- résultat de recherche (ark du travail a faire)
+- bloc flex (améliorer et ++ info)
+- media query (mobile)
+- evenement
+- intérueur article
+- nouvelle article
+- aside (reark)
 
 
 ### Site ground
