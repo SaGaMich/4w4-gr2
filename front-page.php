@@ -25,11 +25,20 @@
                 if(in_category('galerie')){
                     $la_categorie = 'galerie';
                 }
+                
+
                 get_template_part('template-parts/categorie', $la_categorie);
 
             endwhile;
             endif;
         ?>
+         <?php
+        wp_nav_menu(array(
+            "menu"=>"bloc-archive",
+            "container"=>"nav"
+        ));
+        ?>
+           
     </section>
 
 </main>
