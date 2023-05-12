@@ -1,9 +1,12 @@
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
 .site_main{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    
+
+    h6{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
 /* Liste */
 ul,ol{
     font-size: clamp(0.5rem, 0.125rem + 1.6vw, 1.1rem);

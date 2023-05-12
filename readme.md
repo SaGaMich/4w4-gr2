@@ -6,7 +6,7 @@
 - résultat de recherche (ark du travail a faire)
 - bloc flex (améliorer et ++ info)
 - media query (mobile)
-- evenement (visuel ark)
+- evenement (image)
 - intérieur article (améliorer)
 - nouvelle article (améliorer)
 - aside (reark)

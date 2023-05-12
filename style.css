@@ -404,11 +404,13 @@ body {
 
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
 .site_main {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
   /* Liste */
   /* ----------------------------  code */
+}
+.site_main h6 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 .site_main ul, .site_main ol {
   font-size: clamp(0.5rem, 0.125rem + 1.6vw, 1.1rem);
@@ -581,7 +583,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90vw;
 }
 .blocflex .blocflex_article {
   display: flex;
@@ -596,11 +597,19 @@ body {
   background-color: rgb(192, 192, 192);
   box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
   border-radius: 10px;
+  /* img{
+       left: 100;
+
+   }*/
 }
 .blocflex .blocflex_article a {
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.blocflex .blocflex_article h2, .blocflex .blocflex_article h5, .blocflex .blocflex_article p {
+.blocflex .blocflex_article a h2, .blocflex .blocflex_article a h5, .blocflex .blocflex_article a p {
+  text-align: left;
   padding: 0 0;
   margin: 5px 5px;
 }
@@ -834,8 +843,6 @@ Mise en page
 .site_main {
   grid-area: main;
   overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .site_footer {
