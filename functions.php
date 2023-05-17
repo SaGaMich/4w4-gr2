@@ -8,9 +8,11 @@ wp_enqueue_style(   'style-principale', //identificateur du link css
 					filemtime(get_template_directory() . '/style.css') // la version de style.css
 				);
 
-	/*wp_enqueue_style("style-google-font",
-	'https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Ubuntu&display=swap',
-	false);*/
+	wp_enqueue_style("style-google-font",
+	'https://fonts.googleapis.com/css2?family=Montserrat',
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@300',
+    'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap',
+	false);
 }
 
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );

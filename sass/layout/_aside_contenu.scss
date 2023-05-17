@@ -7,10 +7,12 @@ Mise en page
   }
   
   .accueil_main{
-    width: 95vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   width: 98vw;
+    display: block;
+
+    h1{
+      text-align: center;
+    }
   }
 
   .site_main {

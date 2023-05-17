@@ -754,6 +754,10 @@ body {
   font-size: 2rem;
   text-align: center;
   width: 200px;
+  color: rgb(255, 255, 255);
+}
+.menu-evenement-container .menu .menu-item a .title:hover {
+  color: rgb(221, 25, 84);
 }
 .menu-evenement-container .menu .menu-item a .description {
   font-size: 1rem;
@@ -770,24 +774,6 @@ body {
   height: 200px;
 }
 
-/*.menu-bloc-archive-container .menu .menu-item a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin : 20px;
-
-
-    .bloc_cours{
-        background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-1');
-        .image{
-
-        }
-    }
-
-    .bloc_4w4{
-        background-image: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-6');
-}
-}*/
 .menu-bloc-archive-container .menu {
   display: flex;
 }
@@ -835,10 +821,11 @@ Mise en page
 }
 
 .accueil_main {
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 98vw;
+  display: block;
+}
+.accueil_main h1 {
+  text-align: center;
 }
 
 .site_main {
