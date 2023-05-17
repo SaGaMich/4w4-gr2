@@ -1,31 +1,49 @@
 .résultat-recherche{
 
+     h2{
+        text-align: center;
+        }
+
     .blocflex_article_recherche{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
+       display: flex;
+        justify-content: center;
         @media screen and (min-width: $largeur__bureau) {
-            flex-direction: row;
+            //flex-direction: row;
         }
 
          div{
         margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
         background-color: rgb(192, 192, 192);
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
         border-radius: 10px;
         padding: 10px 10px;
+        width: 60vw;
+        color: rgb(44, 43, 43);
 
         a{
             text-decoration: none;
+
         }
     
         h2{
             margin:0 0;
             padding: 5px 5px;
         }
+
+        h5{
+            margin:0 0;
+            padding: 0 0;
+        }
+
     }
+
+    
     }
 
 

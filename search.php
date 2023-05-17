@@ -14,7 +14,6 @@
         $category = 'cours';
         get_template_part('template-parts/search', $category);
 ?>  
-    <hr>
     <?php endwhile;
         endif;
     ?>

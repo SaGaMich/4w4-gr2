@@ -12,7 +12,8 @@
     <h5>Durée:<?= $duree ?></h5>
     <h5>Enseignant:<?= $enseignant ?></h5>
     <h5>Domaine:<?= $domaine ?></h5>
-    </div>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+    </div>
+    
     
 </article>
