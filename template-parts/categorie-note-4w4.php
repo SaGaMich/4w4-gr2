@@ -8,6 +8,14 @@
     }
 ?>
 <article class="blocflex_article">
+    <?php
+        if (has_post_thumbnail()){
+            the_post_thumbnail('thumbnail');
+            //echo get_the_ID();
+        } else {
+            echo get_the_post_thumbnail(38,'thumbnail');
+        }
+    ?>
 <a href="<?php the_permalink(); ?>">
     <h3> <?= $titre ?></h3>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>

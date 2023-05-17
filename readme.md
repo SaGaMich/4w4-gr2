@@ -1,13 +1,15 @@
-# Lab 5
+# TP2
 ## 4w4 - Conception d'interface et développement Web
-### Auteur: Michelle Salois Gadoury
+### Auteur : Michelle Salois Gadoury
 #### Description
-- widget
-- footer
-- logos
-- menu
-
-### problème avec lab5, donc les derniers push sont dans lab5.2
+- caroussel (image, animation)
+- résultat de recherche (ark du travail a faire)
+- bloc flex (améliorer et ++ info)
+- media query (mobile)
+- evenement (image)
+- intérieur article (améliorer)
+- nouvelle article (améliorer)
+- aside (reark)
 
 
 ### Site ground

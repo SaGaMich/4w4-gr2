@@ -1,0 +1,43 @@
+.menu-bloc-archive-container /*.menu .menu-item a*/{
+    
+    .menu {//ul
+        display: flex;
+        
+        .menu-item { //li
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px;
+            height: 20vh;
+            background-color: rgb(102, 96, 104);
+            box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
+            border-radius: 10px;
+            border: 2px rgb(59, 59, 59) solid;
+            background-image: url('https://s2.svgbox.net/heropatterns.svg?ic=graph-paper');
+            
+            a {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                color: rgb(187, 187, 187);
+
+                .title {
+                    display: block;
+                    font-size: 2rem;
+                    text-align: center;
+                    width: 200px;
+                    padding: 10px 0;
+                }
+
+                .description{
+                    font-size: 1rem;
+                    display: block;
+                    text-align: center;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

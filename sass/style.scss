@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 2023-4w4-msg
 */
 /*------------------------------font*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Ubuntu&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Ubuntu&display=swap');
 
 @import "variables/dimension";
 @import "normalize/normalize";
@@ -30,7 +30,8 @@ Text Domain: 2023-4w4-msg
 @import "composants/recherche";
 @import "composants/aside";
 @import "composants/burger";
-@import "composants/carrousel";
+@import "composants/menu_evenement";
+@import "composants/menu_categorie";
 
 /*c-------------------------------------------- layout */
 @import "layout/aside_contenu";
