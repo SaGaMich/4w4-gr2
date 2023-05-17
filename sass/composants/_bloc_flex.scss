@@ -4,11 +4,11 @@
     justify-content: center;
   
     .blocflex_article {
-        display: flex;
+        display: block;
         flex: 1 0 350px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-around;
+        //flex-wrap: wrap;
+        //flex-direction: column;
+        //justify-content: center;
         align-items: center;
         text-align: center;
         margin: 10px 10px;
@@ -16,27 +16,18 @@
         background-color: rgb(192, 192, 192);
         box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
         border-radius: 10px;
-        //width: 100vw;
-       /* img{
-            left: 100;
-    
-        }*/
        
         a{
             text-decoration: none;
-
              display: flex;
-             flex-direction: row;
+             flex-direction: column;
              flex-wrap: wrap;
-            
-            h2{
-
-            }
+             justify-content: center;
 
             h2, h5, p{
-               text-align: left;
+               text-align: center;
                 padding: 0 0;
-                margin: 5px 5px;
+                margin: 10px 10px;
             }
         }
         

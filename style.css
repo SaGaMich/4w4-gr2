@@ -585,11 +585,8 @@ body {
   justify-content: center;
 }
 .blocflex .blocflex_article {
-  display: flex;
+  display: block;
   flex: 1 0 350px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
   margin: 10px 10px;
@@ -597,21 +594,18 @@ body {
   background-color: rgb(192, 192, 192);
   box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
   border-radius: 10px;
-  /* img{
-       left: 100;
-
-   }*/
 }
 .blocflex .blocflex_article a {
   text-decoration: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .blocflex .blocflex_article a h2, .blocflex .blocflex_article a h5, .blocflex .blocflex_article a p {
-  text-align: left;
+  text-align: center;
   padding: 0 0;
-  margin: 5px 5px;
+  margin: 10px 10px;
 }
 .blocflex .blocflex_galerie figure {
   flex: 1 0 30%;
