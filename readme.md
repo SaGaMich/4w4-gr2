@@ -1,16 +1,7 @@
-# TP2
+# épreuve finale
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur : Michelle Salois Gadoury
 #### Description
-- caroussel (image, animation)
-- résultat de recherche (ark du travail a faire)
-- bloc flex (améliorer et ++ info)
-- media query (mobile)
-- evenement (image)
-- intérieur article (améliorer)
-- nouvelle article (améliorer)
-- aside (reark)
-
 
 ### Site ground
 - https://cidweb20.sg-host.com/
