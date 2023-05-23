@@ -709,6 +709,9 @@ body {
 .site_aside .menu_aside a code {
   background-color: rgb(192, 192, 192);
 }
+.site_aside .menu_aside a img {
+  display: none;
+}
 
 /*----------------------------------bouton burger------*/
 .burger {
@@ -810,22 +813,22 @@ body {
   padding: 15px;
 }
 
-.menu-atelier-container .menu {
+.blocflex .menu-atelier-container .menu {
   display: flex;
 }
-.menu-atelier-container .menu .menu-item {
+.blocflex .menu-atelier-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 20px;
 }
-.menu-atelier-container .menu .menu-item a {
+.blocflex .menu-atelier-container .menu .menu-item a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.menu-atelier-container .menu .menu-item a .title {
+.blocflex .menu-atelier-container .menu .menu-item a .title {
   display: block;
   position: absolute;
   font-size: 2rem;
@@ -833,16 +836,16 @@ body {
   width: 200px;
   color: rgb(255, 255, 255);
 }
-.menu-atelier-container .menu .menu-item a .title:hover {
+.blocflex .menu-atelier-container .menu .menu-item a .title:hover {
   color: rgb(221, 25, 84);
 }
-.menu-atelier-container .menu .menu-item a .description {
+.blocflex .menu-atelier-container .menu .menu-item a .description {
   font-size: 1rem;
   display: block;
   position: absolute;
   text-align: center;
 }
-.menu-atelier-container .menu .menu-item a .menu-thumbnail {
+.blocflex .menu-atelier-container .menu .menu-item a .menu-thumbnail {
   position: relative;
   border-radius: 10px;
   z-index: -1;
