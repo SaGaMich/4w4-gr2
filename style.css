@@ -11,7 +11,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 2023-4w4-msg
 */
-/*------------------------------font*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -809,6 +808,47 @@ body {
   display: block;
   text-align: center;
   padding: 15px;
+}
+
+.menu-atelier-container .menu {
+  display: flex;
+}
+.menu-atelier-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+.menu-atelier-container .menu .menu-item a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.menu-atelier-container .menu .menu-item a .title {
+  display: block;
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  width: 200px;
+  color: rgb(255, 255, 255);
+}
+.menu-atelier-container .menu .menu-item a .title:hover {
+  color: rgb(221, 25, 84);
+}
+.menu-atelier-container .menu .menu-item a .description {
+  font-size: 1rem;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+.menu-atelier-container .menu .menu-item a .menu-thumbnail {
+  position: relative;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 50%;
+  width: 300px;
+  height: 200px;
 }
 
 /*c-------------------------------------------- layout */

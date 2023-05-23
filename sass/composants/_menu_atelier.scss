@@ -1,0 +1,48 @@
+.menu-atelier-container { // nav
+    .menu{//ul
+        display: flex;
+        .menu-item { //li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin : 20px;
+            
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                .title {
+                    display: block;
+                    position: absolute;
+                    font-size: 2rem;
+                    text-align: center;
+                    width: 200px;
+                    color: rgb(255, 255, 255);
+                    &:hover{
+                    color: rgb(221, 25, 84);
+                    }
+                }
+
+                .description{
+                    font-size: 1rem;
+                    display: block;
+                    position: absolute;
+                    text-align: center;
+                }
+
+                .menu-thumbnail{
+                    position: relative;
+                    border-radius: 10px;
+                    z-index: -1;
+                    opacity: 50%;
+                    width: 300px;
+                    height: 200px;
+                }
+
+            }
+        }
+    }
+}
+

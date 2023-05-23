@@ -10,8 +10,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 2023-4w4-msg
 */
-/*------------------------------font*/
-//@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Ubuntu&display=swap');
 
 @import "variables/dimension";
 @import "normalize/normalize";
@@ -32,6 +30,7 @@ Text Domain: 2023-4w4-msg
 @import "composants/burger";
 @import "composants/menu_evenement";
 @import "composants/menu_categorie";
+@import "composants/menu_atelier";
 
 /*c-------------------------------------------- layout */
 @import "layout/aside_contenu";

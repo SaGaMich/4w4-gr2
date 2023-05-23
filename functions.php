@@ -44,11 +44,12 @@ return $title;
 add_filter('nav_menu_item_title', 'personalisation_menu_item_title', 10, 4);
 
 /**
- * Pour ajouter la description et une image des événements dans le menu événement
+ * Pour ajouter la description et une image des événements dans le menu événement, bloc-archive, article
  */
 function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
     if ('evenement' == $args->menu ||
-        'bloc-archive' == $args->menu) {
+        'bloc-archive' == $args->menu ||
+        'atelier' == $args->menu) {
         $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
         if ( $post_thumbnail_id ) {
             $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'medium' );

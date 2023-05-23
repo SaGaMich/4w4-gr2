@@ -2,6 +2,11 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur : Michelle Salois Gadoury
 #### Description
+- image aside
+- acf
+- scss
+- média query
+- menu front-page
 
 ### Site ground
 - https://cidweb20.sg-host.com/
