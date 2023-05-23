@@ -15,6 +15,14 @@
         ));
         ?>
     </section>
+     <section class="blocflex">
+        <?php
+        wp_nav_menu(array(
+            "menu"=>"atelier",
+            "container"=>"nav"
+        ));
+        ?>
+    </section>
     <section class="blocflex">
         <?php
             if(have_posts()):

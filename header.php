@@ -11,6 +11,9 @@
     if (! is_front_page() /*|| get_search();*/){
         $nouvelle_classe = 'no-aside';
     }
+    if (is_page_template('template-atelier.php')) {
+       $nouvelle_classe = 'aside-atelier'; //pas sur...
+    }
 ?>
 <body class="site <?php $nouvelle_classe ?>">
     <header class="site_header">
