@@ -2,6 +2,15 @@
 .menu-atelier-container { // nav
     .menu{//ul
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+         @media screen and (min-width: $largeur__tablette) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: $largeur__bureau) {
+            flex-direction: row;
+        }
         .menu-item { //li
             display : flex;
             flex-direction: column;
@@ -13,6 +22,7 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
+                
 
                 .title {
                     display: block;
@@ -20,10 +30,20 @@
                     font-size: 2rem;
                     text-align: center;
                     width: 200px;
-                    color: rgb(255, 255, 255);
-                    &:hover{
-                    color: rgb(221, 25, 84);
+                    color: rgb(216, 216, 216);
+                    font-size: 0.5rem;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                    @media screen and (min-width: $largeur__tablette) {
+                    font-size: 1rem;
                     }
+                    @media screen and (min-width: $largeur__bureau) {
+                    font-size: 2rem;
+                    }
+                }
+
+                .title:hover {
+                    opacity: 100%;
                 }
 
                 .description{
@@ -37,9 +57,7 @@
                     position: relative;
                     border-radius: 10px;
                     z-index: -1;
-                    opacity: 50%;
-                    width: 300px;
-                    height: 200px;
+                    width: 25vw;
                 }
 
             }

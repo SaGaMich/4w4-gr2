@@ -815,6 +815,19 @@ body {
 
 .blocflex .menu-atelier-container .menu {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 800px) {
+  .blocflex .menu-atelier-container .menu {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .blocflex .menu-atelier-container .menu {
+    flex-direction: row;
+  }
 }
 .blocflex .menu-atelier-container .menu .menu-item {
   display: flex;
@@ -834,10 +847,23 @@ body {
   font-size: 2rem;
   text-align: center;
   width: 200px;
-  color: rgb(255, 255, 255);
+  color: rgb(216, 216, 216);
+  font-size: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .blocflex .menu-atelier-container .menu .menu-item a .title {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .blocflex .menu-atelier-container .menu .menu-item a .title {
+    font-size: 2rem;
+  }
 }
 .blocflex .menu-atelier-container .menu .menu-item a .title:hover {
-  color: rgb(221, 25, 84);
+  opacity: 100%;
 }
 .blocflex .menu-atelier-container .menu .menu-item a .description {
   font-size: 1rem;
@@ -849,9 +875,7 @@ body {
   position: relative;
   border-radius: 10px;
   z-index: -1;
-  opacity: 50%;
-  width: 300px;
-  height: 200px;
+  width: 25vw;
 }
 
 /*c-------------------------------------------- layout */
