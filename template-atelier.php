@@ -4,12 +4,13 @@
 */
 get_header(); ?>
 <main class="site__main">
+<div class="page_atelier">
 <?php
 if ( have_posts() ) : the_post(); ?>
 <?php the_post_thumbnail('thumbnail') ?>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-<div class="info_atelier"></div>
+<div class="info_atelier">
 <p>Formateur: <?php the_field('formateur'); ?></p>
 <p>Date de début de l'atelier: <?php the_field('date_atelier'); ?></p>
 <p>Heure de début: <?php the_field('heure_debut'); ?></p>
@@ -17,5 +18,6 @@ if ( have_posts() ) : the_post(); ?>
 <p>Local ou se déroulera l'atelier: <?php the_field('local_deroulera_atelier'); ?></p>
 <?php endif;?>
 </main>
+</div>
 <?php
 get_footer();

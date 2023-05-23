@@ -2,7 +2,7 @@
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur : Michelle Salois Gadoury
 #### Description
-- image aside
+- aside
 - acf
 - scss
 - média query

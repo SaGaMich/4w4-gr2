@@ -878,6 +878,35 @@ body {
   width: 25vw;
 }
 
+.page_atelier {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 20px;
+}
+@media screen and (min-width: 800px) {
+  .page_atelier {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .page_atelier {
+    flex-direction: row;
+  }
+}
+.page_atelier .info_atelier {
+  display: block;
+  background-color: rgb(192, 192, 192);
+  box-shadow: rgba(0, 0, 0, 0.301) 0px 1px 2px 0px, rgba(0, 0, 0, 0.301) 0px 2px 6px 2px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.page_atelier .info_atelier p {
+  font-size: 1rem;
+  margin: 3px 10px;
+  color: rgb(44, 43, 43);
+}
+
 /*c-------------------------------------------- layout */
 /*
 Mise en page
