@@ -9,6 +9,9 @@
         if(in_category('note-4w4')){
             $ma_categorie = "note-4w4";
         }
+       if(is_page_template('template-atelier.php')) {
+            $ma_categorie = "atelier";
+        }
         wp_nav_menu(array(
             "menu" => $ma_categorie,
             "container" => "nav"

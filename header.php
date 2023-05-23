@@ -8,11 +8,12 @@
 </head>
 <?php
     $nouvelle_classe = "";
-    if (! is_front_page() /*|| get_search();*/){
+    if  (is_front_page() || 
+      (! in_category("cours") && ! in_category("note-4w4")) ){
         $nouvelle_classe = 'no-aside';
-    }
+      }
     if (is_page_template('template-atelier.php')) {
-       $nouvelle_classe = 'aside-atelier'; //pas sur...
+        $nouvelle_classe = '';
     }
 ?>
 <body class="site <?php $nouvelle_classe ?>">
